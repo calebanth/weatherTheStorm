@@ -1,0 +1,66 @@
+@import 'normalize.css';
+@import 'owfont-regular.min.css';
+@import 'cutestrap.min.css';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto+Slab:300';
+
+@bg-color: #5D5A55;
+@font-color: #EDECE6;
+@alt-color: #C0C1BD;
+@min-color: #788793;
+
+body {
+  background-color: @bg-color;
+  color: @font-color;
+  font-family: 'Roboto Slab', serif;
+}
+
+.temp {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150%;
+  &.tempMax {
+    color: @font-color;
+  }
+  &.tempMin {
+    color: @min-color;
+  }
+}
+
+.day {
+  color: @alt-color;
+}
+
+.updateZip {
+  padding-left: 30%;
+}
+
+form input {
+  float: left;
+}
+
+input[type="text"] {
+  height: 4.8rem;
+  padding: 6px 10px;
+  color: @bg-color;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+input[type="submit"] {
+  background-color: @min-color;
+  border-color: @min-color;
+  border-radius: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
